@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">Composition</string>
+    <string name="tv_title_text">Composition of the number</string>
+    <string name="tv_game_rules_name">Rules of the game: You will have three pieces in front of you, two of them will be numbers. It is necessary that the sum of the numbers from the two lower figures is equal to the number in the upper figure, for this you need to insert the missing number in the right figure.</string>
+    <string name="tv_example_text">Example: In the upper circle the number 8, in the left number 3, and in the right question mark. So in place of the question mark there must be the number 5, because 5 + 3 = 8.</string>
+    <string name="btn_understand_text">Understood</string>
+    <string name="tv_select_level_text">Select a level:</string>
+    <string name="btn_test_text">TEST</string>
+    <string name="btn_easy_text">EASY</string>
+    <string name="btn_normal_text">NORMAL</string>
+    <string name="btn_hard_text">HARD</string>
+    <string name="tv_required_answers">The required number of correct answers: %s</string>
+    <string name="tv_score_answers_text">Your score: %s</string>
+    <string name="tv_percent_answers_text">The required percentage of correct answers: %s</string>
+    <string name="tv_percent_right_answers_text">Percentage of correct answers: %s</string>
+    <string name="btn_try_again_text">Try again</string>
+    <string name="tv_correct_answer_count_text">Correct answers: %s (minimum %s)</string>
 </resources>
