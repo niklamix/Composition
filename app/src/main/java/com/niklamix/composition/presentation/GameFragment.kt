@@ -8,9 +8,7 @@ import androidx.fragment.app.Fragment
 import com.niklamix.composition.R
 import com.niklamix.composition.data.GameRepositoryImpl
 import com.niklamix.composition.databinding.FragmentGameBinding
-import com.niklamix.composition.databinding.FragmentWelcomeBinding
 import com.niklamix.composition.domain.entity.GameResult
-import com.niklamix.composition.domain.entity.GameSettings
 import com.niklamix.composition.domain.entity.Level
 
 class GameFragment : Fragment() {

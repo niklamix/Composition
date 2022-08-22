@@ -7,10 +7,8 @@ import android.view.ViewGroup
 import androidx.activity.OnBackPressedCallback
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
-import com.niklamix.composition.R
 import com.niklamix.composition.databinding.FragmentGameFinishedBinding
 import com.niklamix.composition.domain.entity.GameResult
-import com.niklamix.composition.domain.entity.GameSettings
 
 class GameFinishedFragment : Fragment() {
 
