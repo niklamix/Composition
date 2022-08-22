@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Состав числа</string>
+    <string name="tv_title_text">Состав числа</string>
+    <string name="tv_game_rules_name">Правила игры: перед вами будет три фигуры, две из них будут числа. Необходимо, чтобы сумма чисел из двух нижних фигур была равна числу в верхней фигуре, для этого нужно вставить недостающее число в правую фигуру.</string>
+    <string name="tv_example_text">Пример: в верхнем круге число 8, в левом число 3, а в правом знак вопроса. Значит на месте вопросительного знака должно быть число 5, потому что 5 + 3 = 8.</string>
+    <string name="btn_understand_text">Понятно</string>
+    <string name="tv_select_level_text">Выберите уровень:</string>
+    <string name="btn_test_text">ТЕСТОВЫЙ</string>
+    <string name="btn_easy_text">ЛЁГКИЙ</string>
+    <string name="btn_normal_text">НОРМАЛЬНЫЙ</string>
+    <string name="btn_hard_text">ТЯЖЁЛЫЙ</string>
+    <string name="tv_required_answers">Необходимое количество правильных ответов: %s</string>
+    <string name="tv_percent_answers_text">Необходимый процент правильных ответов: %s</string>
+    <string name="tv_score_answers_text">Ваш счёт: %s</string>
+    <string name="tv_percent_right_answers_text">Процент правильных ответов: %s</string>
+    <string name="btn_try_again_text">Попробовать ещё раз</string>
+    <string name="tv_correct_answer_count_text">Правильных ответов: %s (минимум %s)</string>
+</resources>
