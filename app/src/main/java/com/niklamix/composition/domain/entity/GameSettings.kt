@@ -6,7 +6,7 @@ import kotlinx.parcelize.Parcelize
 @Parcelize
 data class GameSettings(
     val maxSumValue: Int,
-    val maxCountOfRightAnswers: Int,
-    val maxPercentOfRightAnswer: Int,
+    val minCountOfRightAnswers: Int,
+    val minPercentOfRightAnswer: Int,
     val gameTimeInSeconds: Int
 ): Parcelable
