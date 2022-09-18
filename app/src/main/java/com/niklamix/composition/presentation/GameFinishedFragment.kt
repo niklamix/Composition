@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.activity.OnBackPressedCallback
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
+import com.niklamix.composition.R
 import com.niklamix.composition.databinding.FragmentGameFinishedBinding
 import com.niklamix.composition.domain.entity.GameResult
 
@@ -34,6 +35,11 @@ class GameFinishedFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        setupClickListener()
+        bindingViews()
+    }
+
+    private fun setupClickListener() {
         val callback = object : OnBackPressedCallback(true) {
             override fun handleOnBackPressed() {
                 retryGame()
@@ -42,6 +48,44 @@ class GameFinishedFragment : Fragment() {
         requireActivity().onBackPressedDispatcher.addCallback(viewLifecycleOwner, callback)
         binding.btnTryAgain.setOnClickListener {
             retryGame()
+        }
+    }
+
+    private fun bindingViews() {
+        with(binding) {
+            tvRequiredAnswers.text = String.format(
+                getString(R.string.tv_required_answers),
+                gameResult.gameSettings.minCountOfRightAnswers,
+            )
+            tvScoreAnswers.text = String.format(
+                getString(R.string.tv_score_answers_text),
+                gameResult.countOfRightAnswers,
+            )
+            tvPercentAnswers.text = String.format(
+                getString(R.string.tv_percent_answers_text),
+                gameResult.gameSettings.minPercentOfRightAnswer,
+            )
+            tvPercentRightAnswers.text = String.format(
+                getString(R.string.tv_percent_right_answers_text),
+                getPercentOfRightAnswers(),
+            )
+            ivSmile.setImageResource(getSmileResId())
+        }
+    }
+
+    private fun getSmileResId(): Int {
+        return if (gameResult.winner) {
+            R.drawable.ic_smile
+        } else {
+            R.drawable.ic_smile
+        }
+    }
+
+    private fun getPercentOfRightAnswers() = with(gameResult) {
+        if (countOfQuestion == 0) {
+            0
+        } else {
+            ((countOfRightAnswers / countOfQuestion.toDouble())*100).toInt()
         }
     }
 
